@@ -3,11 +3,11 @@ window.addEventListener("deviceorientation", on_device_orientation);
 function on_device_orientation(evt) {
     var alpha = evt.alpha;
     var beta = evt.beta;
-    var gama = evt.gama;
+    var gama = evt.gamma;
 
 document.getElementById("a").innerHTML = "alpha = "+alpha;
 document.getElementById("b").innerHTML = "beta ="+beta;
-document.getElementById("c").innerHTML = "gama ="+gama;
+document.getElementById("c").innerHTML = "gamma ="+gamma;
 
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
